@@ -6,7 +6,7 @@ public class TaxFunction {
 	private static final double TARIF_PAJAK = 0.05;
 	private static final int PENGHASILAN_TIDAK_KENA_PAJAK_DASAR = 54000000;
 	private static final int PENGHASILAN_TIDAK_KENA_PAJAK_PASANGAN = 4500000;
-	private static final int PENGHASILAN_TIDAK_KENA_PAJAK_ANAK = 1500000;
+	private static final int PENGHASILAN_TIDAK_KENA_PAJAK_ANAK = 4500000; // Diperbaiki dari 1500000 menjadi 4500000
 
 	/**
 	 * Fungsi untuk menghitung jumlah pajak penghasilan pegawai yang harus
