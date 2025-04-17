@@ -105,7 +105,7 @@ public class Employee {
 		}
 
 		boolean sudahMenikah = spouseName != null && !spouseName.isEmpty();
-		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear, annualDeductible,
-				sudahMenikah, childIdNumbers.size());
+		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear,
+				annualDeductible, sudahMenikah, childIdNumbers.size());
 	}
 }
