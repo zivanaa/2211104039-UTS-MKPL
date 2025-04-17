@@ -59,13 +59,21 @@ public class Employee {
 	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
 	 */
 
+	 
 	public void setMonthlySalary(int grade) {
-		if (grade == 1) {
-			monthlySalary = GAJI_GRADE_1;
-		} else if (grade == 2) {
-			monthlySalary = GAJI_GRADE_2;
-		} else if (grade == 3) {
-			monthlySalary = GAJI_GRADE_3;
+		switch (grade) {
+			case 1:
+				monthlySalary = GAJI_GRADE_1;
+				break;
+			case 2:
+				monthlySalary = GAJI_GRADE_2;
+				break;
+			case 3:
+				monthlySalary = GAJI_GRADE_3;
+				break;
+			default:
+				monthlySalary = 0;
+				break;
 		}
 
 		if (isForeigner) {
